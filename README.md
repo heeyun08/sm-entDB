@@ -1,1 +1,1 @@
-# smentDB
+# sm-entDB
