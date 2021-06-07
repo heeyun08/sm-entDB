@@ -12,7 +12,7 @@ CREATE DATABASE IF NOT EXISTS `smentdb`
 
 USE `smentdb` ;
 
-CREATE TABLE `group` (
+CREATE TABLE `team` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `members` INT NOT NULL,
@@ -25,13 +25,12 @@ CREATE TABLE `group` (
 
 CREATE TABLE `member` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
   `birthday` DATE NOT NULL,
-  `group_id` INT NULL,
-  `price` INT(11) NULL,
+  `team_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX (`group_id`),
-  FOREIGN KEY (`group_id`) REFERENCES `group` (`id`)
+  INDEX (`team_id`),
+  FOREIGN KEY (`team_id`) REFERENCES `team` (`id`)
     ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARACTER SET utf8 
@@ -54,10 +53,10 @@ CREATE TABLE `song` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(255) NULL,
   `url` TEXT NULL,
-  `group_id` INT NULL,
+  `team_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX (`group_id`),
-  FOREIGN KEY (`group_id`) REFERENCES `group` (`id`)
+  INDEX (`team_id`),
+  FOREIGN KEY (`team_id`) REFERENCES `team` (`id`)
     ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARACTER SET utf8 
@@ -66,10 +65,10 @@ CREATE TABLE `song` (
 CREATE TABLE `award` (
   `id` INT NOT NULL,
   `description` TEXT,
-  `group_id` INT NULL,
+  `team_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX (`group_id`),
-  FOREIGN KEY (`group_id`) REFERENCES `group` (`id`)
+  INDEX (`team_id`),
+  FOREIGN KEY (`team_id`) REFERENCES `team` (`id`)
     ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARACTER SET utf8 
@@ -78,8 +77,9 @@ CREATE TABLE `award` (
 
 ###############################################
 
-INSERT INTO `group` VALUES
-    (1, '에스파', 4, '2020-11-17', '카리나');
+INSERT INTO `team` VALUES
+    (1, '에스파', 4, '2020-11-17', '카리나'),
+    (2, '엑소', 9, '2012-01-30', '수호');
     
 INSERT INTO `member` VALUES
     (1, '카리나', '2000-04-11', 1);
