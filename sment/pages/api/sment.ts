@@ -6,7 +6,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 		// NOTE: 따옴표(')가 아닌 backtick(`) 사용
 		const query: string = `
 			select * from team
-				left join member on (team.id = team_id)
+				left join team_has_member on (team.tid = team_id)
+				left join member on (member_id = member.mid)
+				left join image on (member.mid = image.member_id)
+				left join song on (team.tid = song.team_id)
 		`
 		const [ rows, fields ] = await db.execute(query)
 

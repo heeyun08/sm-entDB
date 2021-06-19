@@ -16,12 +16,6 @@ const SmentHeader = () => {
 	)
 }
 
-// const units = [
-//   { name: "에스파", leader: "카리나" },
-//   { name: "엑소", leader: "수호" },
-//   { name: "소녀시대", leader: "태연" }
-// ]
-
 const SmentTable = () => {
 	const [units, setUnits] = useState([])
 	
@@ -41,13 +35,17 @@ const SmentTable = () => {
 	return (
 		<table>
 			<tr>
+				<th>이미지</th>
 				<th>이름</th>
 				<th>생일</th>
+				<th>소속그룹</th>
 			</tr>
 			{units.map((unit, index) => 
 				<tr key={index}>
-					<td>{unit.name}</td>
+					<td><img src={`https://sm-entdb-xakdo.run.goorm.io/images/${unit.filename}`} className='profile'/></td>
+					<td>{unit.mname}</td>
 					<td>{unit.birthday}</td>
+					<td>{unit.tname}</td>
 				</tr>
 			)}
 		</table>
