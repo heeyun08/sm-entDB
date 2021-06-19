@@ -212,29 +212,29 @@ INSERT INTO `image` (id, member_id, filename, description) VALUES
     
 # 레드벨벳 이미지
 INSERT INTO `image` (id, member_id, filename, description) VALUES
-    (null, 5, '', '레드벨벳의 리더, 센터 아이린'),
-    (null, 6, '', '레드벨벳의 메인댄서 슬기'),
-    (null, 7, '', '레드벨벳의 메인보컬 웬디'),
-    (null, 8, '', '레드벨벳의 서브보컬 조이'),
-    (null, 9, '', '레드벨벳의 서브래퍼 예리');
+    (null, 5, 'Irene.png', '레드벨벳의 리더, 센터 아이린'),
+    (null, 6, 'Seulgi.png', '레드벨벳의 메인댄서 슬기'),
+    (null, 7, 'Wendy.png', '레드벨벳의 메인보컬 웬디'),
+    (null, 8, 'Joy.png', '레드벨벳의 서브보컬 조이'),
+    (null, 9, 'Yeri.png', '레드벨벳의 서브래퍼 예리');
     
 # 엑소 이미지
 INSERT INTO `image` (id, member_id, filename, description) VALUES
-    (null, 10, '', '엑소의 서브보컬 시우민'),
-    (null, 11, '', '엑소의 리더, 리드보컬 수호'),
-    (null, 12, '', '엑소의 메인댄서 레이'),
-    (null, 13, '', '엑소의 메인보컬 백현'),
-    (null, 14, '', '엑소의 메이보컬 첸'),
-    (null, 15, '', '엑소의 메인래퍼 찬열'),
-    (null, 16, '', '엑소의 메인보컬 디오'),
-    (null, 17, '', '엑소의 센터, 메인댄서 카이'),
-    (null, 18, '', '엑소의 리드래퍼 세훈');
+    (null, 10, 'Xiumin.png', '엑소의 서브보컬 시우민'),
+    (null, 11, 'Suho.png', '엑소의 리더, 리드보컬 수호'),
+    (null, 12, 'Lay.png', '엑소의 메인댄서 레이'),
+    (null, 13, 'Baekhyun.png', '엑소의 메인보컬 백현'),
+    (null, 14, 'Chen.png', '엑소의 메이보컬 첸'),
+    (null, 15, 'Chanyeol.png', '엑소의 메인래퍼 찬열'),
+    (null, 16, 'DO.png', '엑소의 메인보컬 디오'),
+    (null, 17, 'Kai.png', '엑소의 센터, 메인댄서 카이'),
+    (null, 18, 'Sehun.png', '엑소의 리드래퍼 세훈');
     
 # 샤이니 이미지
 INSERT INTO `image` (id, member_id, filename, description) VALUES
-    (null, 19, '', '샤이니의 리더, 리드보컬 온유'),
-    (null, 20, '', '샤이니의 메인보컬 종현'),
-    (null, 21, '', '샤이니의 리드래퍼 키'),
-    (null, 22, '', '샤이니의 메인래퍼 민호'),
-    (null, 23, '', '샤이니의 메인댄서 태민');
+    (null, 19, 'Onew.png', '샤이니의 리더, 리드보컬 온유'),
+    (null, 20, 'Jonghyun.png', '샤이니의 메인보컬 종현'),
+    (null, 21, 'Key.png', '샤이니의 리드래퍼 키'),
+    (null, 22, 'Minho.png', '샤이니의 메인래퍼 민호'),
+    (null, 23, 'Taemin.png', '샤이니의 메인댄서 태민');
   
