@@ -50,7 +50,7 @@ CREATE TABLE `records` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(255) NOT NULL,
   `team_id` INT NOT NULL,
-  PRIMARY KEY (`sid`),
+  PRIMARY KEY (`id`),
   INDEX (`team_id`),
   FOREIGN KEY (`team_id`) REFERENCES `team` (`tid`)
     ON DELETE CASCADE ON UPDATE CASCADE
@@ -206,9 +206,9 @@ INSERT INTO `records` (id, title, team_id) VALUES
 # 에스파 이미지
 INSERT INTO `image` (id, member_id, filename, description) VALUES
     (null, 1, 'Karina.png', '에스파의 리더, 센터 카리나'),
-    (null, 2, 'Giselle.png', '에스파의 올라운더 지젤'),
-    (null, 3, 'Winter.png', '에스파의 올라운더 윈터'),
-    (null, 4, 'Ning.png', '에스파의 올라운더 닝닝');
+    (null, 2, 'Giselle.png', '에스파의 메인래퍼 지젤'),
+    (null, 3, 'Winter.png', '에스파의 메인보컬 윈터'),
+    (null, 4, 'Ning.png', '에스파의 메인댄서 닝닝');
     
 # 레드벨벳 이미지
 INSERT INTO `image` (id, member_id, filename, description) VALUES
@@ -224,7 +224,7 @@ INSERT INTO `image` (id, member_id, filename, description) VALUES
     (null, 11, 'Suho.png', '엑소의 리더, 리드보컬 수호'),
     (null, 12, 'Lay.png', '엑소의 메인댄서 레이'),
     (null, 13, 'Baekhyun.png', '엑소의 메인보컬 백현'),
-    (null, 14, 'Chen.png', '엑소의 메이보컬 첸'),
+    (null, 14, 'Chen.jpg', '엑소의 메이보컬 첸'),
     (null, 15, 'Chanyeol.png', '엑소의 메인래퍼 찬열'),
     (null, 16, 'DO.png', '엑소의 메인보컬 디오'),
     (null, 17, 'Kai.png', '엑소의 센터, 메인댄서 카이'),
