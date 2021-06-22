@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../styles/member.css'
+import '../styles/sment.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
