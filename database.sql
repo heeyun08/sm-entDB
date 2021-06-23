@@ -28,7 +28,7 @@ CREATE TABLE `member` (
   `mid` INT NOT NULL AUTO_INCREMENT,
   `mname` VARCHAR(45) NOT NULL,
   `birthday` VARCHAR(45) NOT NULL,
-  `position` VARCHAR(255) DEFAULT NULL,
+  `position` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`mid`)
 ) ENGINE = InnoDB
   DEFAULT CHARACTER SET utf8 
@@ -87,7 +87,7 @@ INSERT INTO `member` (mid, mname, birthday, position) VALUES
     (1, '카리나', '2000. 04. 11', '리더, 보컬, 댄서, 래퍼'),
     (2, '지젤', '2000. 10. 30', '보컬, 래퍼, 댄서'),
     (3, '윈터', '2001. 01. 01', '메인댄서, 리드래퍼, 서브보컬'),
-    (4, '닝닝', '2002. 10. 23', '보컬, 랩, 댄스');
+    (4, '닝닝', '2002. 10. 23', '보컬, 랩, 댄서');
 
 # 레드벨벳 멤버
 INSERT INTO `member` (mid, mname, birthday, position) VALUES
@@ -149,7 +149,7 @@ INSERT INTO `records` (id, title, team_id) VALUES
     (null, 'Russian Roulette', 2),
     (null, 'Rookie', 2),
     (null, 'Would U', 2),
-    (null, '빨간 맛', 2),
+    (null, '빨간 맛(Red flavor)', 2),
     (null, '환생(Rebirth)', 2),
     (null, 'Peek-A-Boo', 2),
     (null, 'Bad Boy', 2),

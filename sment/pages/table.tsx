@@ -75,15 +75,15 @@ const MemberTable = () => {
 	return (
 		<table>
 			<tr>
-				<th>프로필</th>
+				<th>프로필 사진</th>
 				<th>이름</th>
 				<th>생일</th>
 				<th>포지션</th>
-				<th>소속그룹</th>
+				<th>소속 그룹</th>
 			</tr>
 			{units.map((unit, index) => 
 				<tr key={index}>
-					<td><img src={`https://sm-entdb-xakdo.run.goorm.io/images/${unit.filename}`} className='profile'/></td>
+					<td className='image'><img src={`https://sm-entdb-xakdo.run.goorm.io/images/${unit.filename}`} className='profile'/></td>
 					<td>{unit.mname}</td>
 					<td>{unit.birthday}</td>
 					<td>{unit.position}</td>

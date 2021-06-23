@@ -1,6 +1,6 @@
 h1 {
 	text-align: center;
-	background-color: #FFD2D2;
+	background-color: #FFCFDA;
 	padding: 20px;
 	margin: 10px;
 }
@@ -21,15 +21,18 @@ tr:nth-child(even){
 }
 
 tr:hover { 
-	background-color: #FFD2D2; 
+	background-color: #FFD0AF;
 }
 
 th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #FFA374;
-  color: white;
+  text-align: center;
+  background-color: #FFCFDA;
+}
+
+.image {
+	text-align: center;	
 }
 
 .profile {

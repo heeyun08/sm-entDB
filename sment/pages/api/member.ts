@@ -12,7 +12,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 		`
 		const [ rows, fields ] = await db.execute(query)
 
-		//console.log(rows)
 		res.status(200).json(rows)
 	} catch (err) {
 		return res.status(500).json(err)
